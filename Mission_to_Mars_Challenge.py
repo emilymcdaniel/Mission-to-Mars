@@ -107,7 +107,7 @@ url = 'https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=tar
 browser.visit(url)
 
 # 2. Create a list to hold the images and titles.
-hemisphere_image_urls = {}
+hemisphere_image_urls = []
 
 html = browser.html
 hemis_soup = soup(html, 'html.parser')
