@@ -111,10 +111,10 @@ def mars_hemispheres(browser):
         title = hemi.find('h3').get_text()
         link = hemi.find('a')
         href = link['href']
-        img_url = f'https://astrogeology.usgs.gov{href}' 
+        img_urls = f'https://astrogeology.usgs.gov{href}' 
         title_list.append(title)
         
-        browser.visit(img_url)
+        browser.visit(img_urls)
         html2 = browser.html
         img_soup = soup(html2, 'html.parser')
         image_link = img_soup.find_all('div', class_="downloads")
