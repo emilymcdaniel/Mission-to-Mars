@@ -124,7 +124,7 @@ def mars_hemispheres(browser):
             rel_image_href = rel_image_path['href']
             rel_href_list.append(rel_image_href)
 
-    hemisphere_image_urls = [{'title': title_list, 'img_urls': rel_href_list} for title_list,rel_href_list in zip(title_list,rel_href_list)]
+    hemisphere_image_urls = [{'title': title_list, 'img_url': rel_href_list} for title_list,rel_href_list in zip(title_list,rel_href_list)]
     return hemisphere_image_urls
 
 
